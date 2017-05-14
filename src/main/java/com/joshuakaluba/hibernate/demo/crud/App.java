@@ -46,6 +46,7 @@ public class App {
 			System.out.println(person.toString());
 		}
 		
+		//get the first person from the list
 		return people.get(0);
 	}
 
@@ -65,7 +66,9 @@ public class App {
 
 		Person person = (Person) session.get(Person.class, personId);
 
-		session.delete(person);System.out.println("Person deleted");
+		session.delete(person);
+		
+		System.out.println("Person deleted");
 
 	}
 
